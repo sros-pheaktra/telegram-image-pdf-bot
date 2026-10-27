@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 import sharp from 'sharp';
 import { TEMP_ROOT, ensureTempRoot, safeUnlink } from '../utils/cleanup.js';
 
-export const ALLOWED_FORMATS = ['jpeg', 'png', 'webp'];
+export const ALLOWED_FORMATS = ['jpg','jpeg', 'png', 'webp'];
 export const MAX_INPUT_BYTES = 20 * 1024 * 1024; // Telegram bots can download up to 20 MB
 export const MAX_INPUT_PIXELS = 50_000_000; // ~50 megapixels
 const DOWNLOAD_TIMEOUT_MS = 30_000;
